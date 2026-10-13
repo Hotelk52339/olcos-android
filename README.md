@@ -20,6 +20,16 @@ olcOS для Android — то же приложение, что [olcOS для iO
 2. Разрешите установку из этого источника (Android спросит сам) и установите. Новые версии ставятся поверх старых.
 3. Приложение само скажет, когда выйдет новая версия (Настройки → Обновления).
 
+### Свой сервер
+
+Нужен любой VPS (Debian, Ubuntu, Fedora). Одна команда на сервере ставит всё и показывает QR-код приглашения:
+
+```
+curl -fsSL https://raw.githubusercontent.com/Hotelk52339/olcos-ios/main/install.sh | sudo bash
+```
+
+Отсканируйте его в olcOS: телефон станет владельцем сервера, и дальше всё делается из приложения: комнаты, протоколы, обновление ядра, приглашения для семьи (одна ссылка на каждое устройство, с доступом к управлению или без). Приглашения принимают и Android, и iPhone.
+
 ### Что умеет
 
 - Два режима: **VPN** (всё устройство) и **прокси** (SOCKS5 для выбранных приложений, кнопка «Использовать в Telegram»).
@@ -42,6 +52,16 @@ olcOS for Android is the same app as [olcOS for iOS](https://github.com/Hotelk52
 1. Download the latest `olcOS-android-<version>.apk` from [Releases](https://github.com/Hotelk52339/olcos-android/releases/latest).
 2. Allow installs from this source when Android asks, and install. New versions install over old ones.
 3. The app tells you when a new version is out (Settings → Updates).
+
+### Your own server
+
+Any VPS (Debian, Ubuntu, Fedora) will do. One command on the server installs everything and shows a QR code of an invite:
+
+```
+curl -fsSL https://raw.githubusercontent.com/Hotelk52339/olcos-ios/main/install.sh | sudo bash
+```
+
+Scan it with olcOS: the phone becomes the server's owner and everything else is done from the app: rooms, protocols, the core update, invites for the family (one link per device, with or without management access). Both Android and iPhone accept invites.
 
 ### Features
 
